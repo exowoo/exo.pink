@@ -16,12 +16,20 @@
       min-height: 100%;
     }
 
+    @font-face  {
+      font-family: 'chrova';
+      src: url('chrova-demo.chrovademo.otf') format('opentype');
+    }
+
     body {
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow-x: hidden;
+
+      font-family: 'chrova', sans-serif;
+
     }
 
     .content {
@@ -32,9 +40,11 @@
 
 <body>
   <div class="content">
-    <img src="https://raw.githubusercontent.com/exowoo/exo.pink/refs/heads/main/exo0001.png" alt="exo" class="logo">
-    <h1>hi!!!1</h1>
-    <p>You have entered my lair :3c</p>
+    <img src="https://raw.githubusercontent.com/exowoo/exo.pink/refs/heads/main/exo0001.png" alt="exo" class="logo" style="width: 200px; height: auto;">
+    <p style="font-size: 73px; margin:0; margin-top:35px ;">Hewwo</p>
+    <p style="font-size: 50px; margin-top:-35px">You have entered my lair</p>
+    <a href="page2.html" style="color: white; text-decoration: underline; font-family: Arial, sans-serif;">
+      -> click me <-
   </div>
 </body>
 </html>

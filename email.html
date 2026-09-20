@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      border: 1px solid purple;
+      padding: 25px 40px;
+      text-align: center;
+    }
+
+    input {
+      display: block;
+      margin: 15px auto;
+      padding: 8px;
+      background: black;
+      color: white;
+      border: 1px solid purple;
+    }
+
+    button {
+      padding: 8px 20px;
+      background: black;
+      color: white;
+      border: 1px solid purple;
+      cursor: pointer;
+    }
+
+    #error {
+      color: #ff4444;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="checkPassword()">Enter</button>
+
+    <p id="error"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+
+      if (password === "idk") {
+        window.location.href = "https://mail.zoho.eu/";
+      } else {
+        document.getElementById("error").textContent = "Wrong password";
+      }
+    }
+  </script>
+
+</body>
+</html>
